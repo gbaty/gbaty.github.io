@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>devel-website &mdash; devel-doc 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="devel-doc 1.0 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">devel-doc 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="devel-website">
+<h1>devel-website<a class="headerlink" href="#devel-website" title="Permalink to this headline">¶</a></h1>
+<p>Repository to store development tips</p>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>How to use github and sphinx to generate beautiful documentation.
+All tips and models are based on excellent work done by <a class="reference external" href="http://ipython.org">IPython Team</a> .
+Parts of this documentation directly come from <a class="reference external" href="https://github.com/ipython/ipython-doc/tree/gh-pages">IPython-doc</a> and <a class="reference external" href="https://github.com/ipython/ipython-website">IPython-website</a>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Generate a github project called &#8220;project-website&#8221; that contains documentation sources (mainly sphinx rst files)</li>
+<li>Generate a github project called &#8220;project-doc&#8221; with a branch called &#8220;gh-pages&#8221;. This repository will contain built files (mainly html files)</li>
+<li>Copy &#8220;_scripts&#8221; directory from <a class="reference external" href="https://github.com/ipython/ipython-website/tree/master/_scripts">IPython website</a></li>
+<li>Create your sphinx project with sphinx-wizard.</li>
+</ul>
+</div></blockquote>
+<p>To question Separate source and build directories (y/n) [n], answer n</p>
+<blockquote>
+<div><ul class="simple">
+<li>Add to makefile :</li>
+</ul>
+</div></blockquote>
+<div class="highlight-text"><div class="highlight"><pre>site: clean html
+      python _scripts/copy_trees.py
+
+# Copy changes to the repo from which they are served
+gh-pages: site
+      python _scripts/gh-pages.py
+</pre></div>
+</div>
+<p>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Create of repository for the website for your user or organization as explained in <a class="reference external" href="http://pages.github.com">Github help pages</a></li>
+<li>Create an empty file on this repository and push it to github (this is necessary because a master branch is required on this repo)</li>
+<li>Modify _scripts/gh-pages.py and change page_repo with your website address (for example: <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:myorganization/myorganization.github.io.git</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">devel-website</a><ul>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">devel-doc 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Guillaume Baty.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

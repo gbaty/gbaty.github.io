@@ -1,4 +1,4 @@
-gbaty.github.io
-===============
+devel-website
+=============
 
-Pages
+Repository to store development tips
