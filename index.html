@@ -53,14 +53,29 @@ Parts of this documentation directly come from <a class="reference external" hre
 <div class="section" id="create-documentation-source-repository">
 <h2>Create documentation source repository<a class="headerlink" href="#create-documentation-source-repository" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><ul class="simple">
-<li>Generate a github project called &#8220;organization-website&#8221; that contains documentation sources (mainly sphinx rst files)</li>
-<li>Copy &#8220;_scripts&#8221; directory from <a class="reference external" href="https://github.com/ipython/ipython-website/tree/master/_scripts">IPython website</a></li>
-<li>Modify _scripts/gh-pages.py and change page_repo with your website address.
-- For example: <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:myorganization/myorganization.github.io.git</li>
-<li>Create your sphinx project with sphinx-wizard
-- To question &#8220;Separate source and build directories (y/n) [n]&#8221;, answer n</li>
-<li>Add to makefile :</li>
+<div><ul>
+<li><p class="first">Generate a github project called &#8220;organization-website&#8221; that contains documentation sources (mainly sphinx rst files)</p>
+</li>
+<li><p class="first">Copy &#8220;_scripts&#8221; directory from <a class="reference external" href="https://github.com/ipython/ipython-website/tree/master/_scripts">IPython website</a></p>
+</li>
+<li><dl class="first docutils">
+<dt>Modify _scripts/gh-pages.py and change page_repo with your website address.</dt>
+<dd><ul class="first last simple">
+<li>For example: <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:myorganization/myorganization.github.io.git</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Create your sphinx project with sphinx-wizard</dt>
+<dd><ul class="first last simple">
+<li>To question &#8220;Separate source and build directories (y/n) [n]&#8221;, answer n</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Add to makefile :</p>
+</li>
 </ul>
 </div></blockquote>
 <div class="highlight-text"><div class="highlight"><pre>site: clean html
