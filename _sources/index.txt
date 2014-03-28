@@ -32,3 +32,5 @@ To question Separate source and build directories (y/n) [n], answer n
   * Create of repository for the website for your user or organization as explained in `Github help pages <http://pages.github.com>`_
   * Create an empty file on this repository and push it to github (this is necessary because a master branch is required on this repo)
   * Modify _scripts/gh-pages.py and change page_repo with your website address (for example: git@github.com:myorganization/myorganization.github.io.git
+  * Create a file named ".nojekyll" in project myorganization.github.io to disable jekyll (and allow to put folder beginning with _)
+  
