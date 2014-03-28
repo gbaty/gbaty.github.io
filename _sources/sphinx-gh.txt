@@ -46,4 +46,13 @@ Create repository to put generated html files.
 Update your repositories
 ========================
 
-Once rst sources are ok, just run "make gh-pages" and follow instructions
+Standard workflow
+-----------------
+
+  * modify rst sources, add files, ...
+  * generate html files locally : "make html"
+  * check result in _build/html. If ok, continue to next step.
+  * Commit and push source modifications
+  * generate a commit with "make gh-pages"
+  * check git state in gh-pages (normally all is ok)
+  * push gh-pages

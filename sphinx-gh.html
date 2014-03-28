@@ -111,7 +111,20 @@ gh-pages: site
 </div>
 <div class="section" id="update-your-repositories">
 <h2>Update your repositories<a class="headerlink" href="#update-your-repositories" title="Permalink to this headline">¶</a></h2>
-<p>Once rst sources are ok, just run &#8220;make gh-pages&#8221; and follow instructions</p>
+<div class="section" id="standard-workflow">
+<h3>Standard workflow<a class="headerlink" href="#standard-workflow" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>modify rst sources, add files, ...</li>
+<li>generate html files locally : &#8220;make html&#8221;</li>
+<li>check result in _build/html. If ok, continue to next step.</li>
+<li>Commit and push source modifications</li>
+<li>generate a commit with &#8220;make gh-pages&#8221;</li>
+<li>check git state in gh-pages (normally all is ok)</li>
+<li>push gh-pages</li>
+</ul>
+</div></blockquote>
+</div>
 </div>
 </div>
 
@@ -129,7 +142,10 @@ gh-pages: site
 <li><a class="reference internal" href="#create-html-repository">Create html repository</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#update-your-repositories">Update your repositories</a></li>
+<li><a class="reference internal" href="#update-your-repositories">Update your repositories</a><ul>
+<li><a class="reference internal" href="#standard-workflow">Standard workflow</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
