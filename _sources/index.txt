@@ -15,10 +15,11 @@ Create documentation source repository
 
   * Generate a github project called "organization-website" that contains documentation sources (mainly sphinx rst files)
   * Copy "_scripts" directory from `IPython website <https://github.com/ipython/ipython-website/tree/master/_scripts>`_
-  * Modify _scripts/gh-pages.py and change page_repo with your website address (for example: git@github.com:myorganization/myorganization.github.io.git
-  * Create your sphinx project with sphinx-wizard.
-    
-To question "Separate source and build directories (y/n) [n]", answer n
+  * Modify _scripts/gh-pages.py and change page_repo with your website address.
+    - For example: git@github.com:myorganization/myorganization.github.io.git
+  
+  * Create your sphinx project with sphinx-wizard
+    - To question "Separate source and build directories (y/n) [n]", answer n
 
   * Add to makefile :
 
