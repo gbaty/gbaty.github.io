@@ -1,10 +1,11 @@
+=============
 devel-website
 =============
 
 Repository to store development tips
 
 Documentation
--------------
+=============
 
 How to use github and sphinx to generate beautiful documentation.
 All tips and models are based on excellent work done by `IPython Team <http://ipython.org>`_ .
