@@ -6,11 +6,11 @@
 Welcome to Guillaume Baty Pages
 ===============================
 
-Contents:
+Documentation
+-------------
 
-.. toctree::
-   :maxdepth: 2
-
+* `OpenAleaLab's documentation (my devel version) <http://gbaty.github.io/openalealab-website>`_
+* `OpenAleaLab's documentation (official version) <http://openalea.github.io>`_
 
 
 Indices and tables
