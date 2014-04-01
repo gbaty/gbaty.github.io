@@ -1,4 +1,2 @@
-devel-website
+gbaty-website
 =============
-
-Repository to store development tips
